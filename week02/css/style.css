@@ -1,0 +1,46 @@
+.circle{
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    background-color: red;
+    animation-name: zoom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top:0;
+    left:0;
+    animation-direction: alternate;
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(0.5);
+        top: 0;
+        left: 0;
+    }
+    50%{
+        transform: scale(1.5);
+        top: 80vh;
+        left: 45vw;
+        filter: blur(20px);
+    }
+    100%{
+        transform: scale(0.5);
+        top: 0vh;
+        left: 90vw;
+    }
+}
+
+h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    color: transparent;
+    background-clip: text;
+    background: linear-gradient(218deg, rgba(252,132,9,1) 0%, rgba(201,21,153,1) 100%);    -webkit-color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+    
+}
